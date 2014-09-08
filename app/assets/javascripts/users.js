@@ -13,7 +13,7 @@ $(document).ready(function(){
 	}
     $('li.product:last-child > .circle').replaceWith("?");*/
 
-    $(function() {
-	    FastClick.attach(document.body);
-	});
-})
+//     $(function() {
+// 	    FastClick.attach(document.body);
+// 	});
+// })
