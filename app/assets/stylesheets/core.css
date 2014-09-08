@@ -687,19 +687,32 @@ only screen and (min-device-pixel-ratio: 2) {
 /* iPads (portrait and landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	#home .hero {
-		height: 270px;
+		height: 330px;
+	}
+
+	#infoBox {
+		height: 490px;
 	}
 
 	#referbox {
-		width: 725px;
+		height: 740px;
+		width: 680px
 	}
 
 	#referBox .hero {
-		height: 540px;
+		height: 430px;
 	}
 
 	#refer .page-content {
 		width: 640px;
+	}
+
+	#refer .prizes .products li.title .friends {
+		margin-top: 0px;
+	}
+
+	#refer .prizes .products li.title .rewards {
+		margin-top: 16px;
 	}
 }
 
