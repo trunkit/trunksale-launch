@@ -1,0 +1,7 @@
+log/*.log
+tmp/*
+vendor/ruby
+
+log/development.log
+
+tmp/pids/server.pid
