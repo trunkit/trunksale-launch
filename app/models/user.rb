@@ -30,8 +30,8 @@ class User < ActiveRecord::Base
             "image" => ActionController::Base.helpers.asset_path("refer/winston@2x.png")
         },
         {
-            'count' => 500, 
-            "html" => "One Piece of Jennifer<br>Fisher Jewelry",
+            'count' => 100, 
+            "html" => "One Piece from Jennifer<br>Fisher Jewelry",
             "class" => "five",
             "image" => ActionController::Base.helpers.asset_path("refer/blade-explain@2x.png")
         }
