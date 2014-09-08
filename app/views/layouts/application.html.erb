@@ -6,20 +6,13 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="<%= @bodyId %>"> <!--<![endif]-->
 <head>
         <title>The Trunksale &ndash; Up to 70% Off on Designer Fashion</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;" />
         <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
         <link rel="shortcut icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="The Trunksale is about to launch."/>
         <meta property="og:description" content="Can't wait to shop designer fashion from independent boutiques up to 70% off. Didn’t want to leave you all behind. Check out The Trunksale here."/>
         <meta property="og:image" content="<%= asset_path("refer/cream-tooltip.png") %>"/>
         <meta property="og:url" content="<%= root_url %>"/>
-        <% if @is_mobile %>
-            <% if @bodyId == 'home' %>
-                <meta name="viewport" content="width=1600" />
-            <% else %>
-                <meta name="viewport" content="width=1120" />
-            <% end %>
-        <% end %>
         <%= stylesheet_link_tag "core.css", :media => "all" %>
         <%= csrf_meta_tags %>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

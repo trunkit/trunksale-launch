@@ -638,7 +638,7 @@ form{
 /*
 	RETINA
 */
-@media only screen and (min--moz-device-pixel-ratio: 2),
+/*@media only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
@@ -682,22 +682,23 @@ only screen and (min-device-pixel-ratio: 2) {
 		background: url(/assets/refer/caret-selected@2x.png) center center no-repeat;
 		background-size: 16px 10px;
 	}
-}
+}*/
 
-@media (max-width: 1065px) {
+/*@media (max-width: 1065px) {
 	html.home {
 		background-size: 1065px;
 	}
-}
+}*/
 
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-	.bg {
+@media screen and (max-device-width: 480px) and (orientation: portrait), (max-width: 480px) {
+	/*.bg {
 		display: none;
 	}
-
+*/
 	#infoBox,
 	#referBox {
 		width: 300px;
+		margin: 10px auto;
 	}
 
 	#referBox {
@@ -741,6 +742,12 @@ only screen and (min-device-pixel-ratio: 2) {
 
 	#refer .page-content {
 		width: 280px;
+	}
+
+	#refer .share-wrap .social-links .fb,
+	#refer .share-wrap .social-links .twit
+	{
+		background-size: 50px 50px;
 	}
 
 	#refer .prizes ul.products {
