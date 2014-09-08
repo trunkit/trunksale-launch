@@ -684,7 +684,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 }
 
-@media screen and (max-device-width: 480px) and (orientation: portrait), (max-width: 480px) {
+@media screen and (max-device-width: 480px) and (orientation: portrait), (max-width: 480px), (orientation: landscape) {
 	/*.bg {
 		display: none;
 	}
