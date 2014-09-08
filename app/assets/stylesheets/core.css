@@ -638,7 +638,7 @@ form{
 /*
 	RETINA
 */
-/*@media only screen and (min--moz-device-pixel-ratio: 2),
+@media only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
@@ -682,13 +682,7 @@ only screen and (min-device-pixel-ratio: 2) {
 		background: url(/assets/refer/caret-selected@2x.png) center center no-repeat;
 		background-size: 16px 10px;
 	}
-}*/
-
-/*@media (max-width: 1065px) {
-	html.home {
-		background-size: 1065px;
-	}
-}*/
+}
 
 @media screen and (max-device-width: 480px) and (orientation: portrait), (max-width: 480px) {
 	/*.bg {
@@ -702,7 +696,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 
 	#referBox {
-		height: 1200px;
+		height: 1110px;
 	}
 
 	#referBox .hero {
@@ -750,48 +744,51 @@ only screen and (min-device-pixel-ratio: 2) {
 		background-size: 50px 50px;
 	}
 
+	#refer .prizes .progress {
+		display: none;
+	}
+
 	#refer .prizes ul.products {
 		margin-top: 20px;
-		height: 100px
+		height: 320px;
 	}
 
 	#refer .prizes .products li.title {
-		width: 280px;
-		height: 90px;
+		display: none;
 	}
 
 	#refer .prizes .products li.product {
 		width: 280px;
 		height: 70px;
+		margin: 0 0 34px;
 	}
 
 	#refer .prizes .products li.title .friends,
 	#refer .prizes .products li.title .rewards,
 	#refer .prizes .products li.product p {
-		display: inline-block;
+		display: block;
 		width: 138px;
-		margin-top: 0;
+		margin: 5px auto;
 	}
 
-	#refer .prizes .products li.product p {
-		text-align: left;
-	}
 
 	#refer .prizes p.place {
 		display: inline-block;
 	}
 
 	#refer .prizes .products li.product .circle {
-		display: inline-block;
-		margin: 0px 30px;
+		display: block;
+		margin: 0px auto;
+		width: 100px;
 
 	}
 
+	span.numberReplace::after {
+		content: " Friends";
+	}
+
 	#refer .prizes .products li.product .sep {
-		display: inline-block;
-		margin: 13px 16px 13px;
-		width: 3px;
-		height: 2px;
+		display: none;
 	}
 }
 

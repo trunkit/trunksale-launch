@@ -40,7 +40,7 @@
                     <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
                         <div class="circle"><span class="numberReplace"><%= stop["count"] %></span></div>
                         <div class="sep"></div>
-                        <p><%= stop["html"].html_safe %></p>
+                        <div class="description"><p><%= stop["html"].html_safe %></p></div>
 
                         <div class="tooltip">
                             <img src="<%= stop["image"] %>" height="254">
