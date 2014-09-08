@@ -7,8 +7,8 @@
 
   src: asset-url('helveticaltstd-lightcond.eot', font);
   src: asset-url('helveticaltstd-lightcond.eot?#iefix', font) format('embedded-opentype'),
-       asset-url('helveticaltstd-lightcond.woff') format('woff', font),
-       asset-url('helveticaltstd-lightcond.ttf') format('truetype', font),
+       asset-url('helveticaltstd-lightcond.woff', font) format('woff'),
+       asset-url('helveticaltstd-lightcond.ttf', font) format('truetype'),
        asset-url('helveticaltstd-lightcond.svg#helveticaltstd-lightcond', font) format('svg');
 }
 
