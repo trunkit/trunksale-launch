@@ -694,8 +694,8 @@ only screen and (min-device-pixel-ratio: 2) {
 		height: 490px;
 	}
 
-	#referbox {
-		height: 770px;
+	#referBox {
+		height: 760px;
 		width: 680px;
 	}
 
