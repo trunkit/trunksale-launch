@@ -5,67 +5,11 @@
     style:  normal;
   }
 
-  src: asset-url('helveticaltstd-lightcond.eot');
-  src: asset-url('helveticaltstd-lightcond.eot?#iefix') format('embedded-opentype'),
-       asset-url('helveticaltstd-lightcond.woff') format('woff'),
-       asset-url('helveticaltstd-lightcond.ttf') format('truetype'),
-       asset-url('helveticaltstd-lightcond.svg#helveticaltstd-lightcond') format('svg');
-}
-
-@font-face {
-  font: {
-    family: 'Helvetica Condensed';
-    weight: bold;
-    style:  normal;
-  }
-
-  src: asset-url('helvetica-condensed-bold.eot'); /* IE9 Compat Modes */
-  src: asset-url('helvetica-condensed-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       asset-url('helvetica-condensed-bold.woff') format('woff'), /* Modern Browsers */
-       asset-url('helvetica-condensed-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       asset-url('helvetica-condensed-bold.svg#27b78d4eb59fba12a05db0afbf481428') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font: {
-    family: "Helvetica Neue";
-    weight: 100;
-    style:  normal;
-  }
-
-  src: asset-url('helveticaneueultralight.eot');
-  src: asset-url('helveticaneueultralight.eot?#iefix') format('embedded-opentype'),
-       asset-url('helveticaneueultralight.woff') format('woff'),
-       asset-url('helveticaneueultralight.ttf') format('truetype'),
-       asset-url('helveticaneueultralight.svg#helveticaneueultralight') format('svg');
-}
-
-@font-face {
-  font: {
-    family: "Lato";
-    weight: bold;
-    style:  normal;
-  }
-
-  src: asset-url('lato-bol-webfont.eot');
-  src: asset-url('lato-bol-webfont.eot?#iefix') format('embedded-opentype'),
-       asset-url('lato-bol-webfont.woff') format('woff'),
-       asset-url('lato-bol-webfont.ttf') format('truetype'),
-       asset-url('lato-bol-webfont.svg#latobold') format('svg');
-}
-
-@font-face {
-  font: {
-    family: "Lato";
-    weight: lighter;
-    style:  normal;
-  }
-
-  src: asset-url('lato-lig-webfont.eot');
-  src: asset-url('lato-lig-webfont.eot?#iefix') format('embedded-opentype'),
-       asset-url('lato-lig-webfont.woff') format('woff'),
-       asset-url('lato-lig-webfont.ttf') format('truetype'),
-       asset-url('lato-lig-webfont.svg#lato_lightregular') format('svg');
+  src: asset-url('helveticaltstd-lightcond.eot', font);
+  src: asset-url('helveticaltstd-lightcond.eot?#iefix', font) format('embedded-opentype'),
+       asset-url('helveticaltstd-lightcond.woff') format('woff', font),
+       asset-url('helveticaltstd-lightcond.ttf') format('truetype', font),
+       asset-url('helveticaltstd-lightcond.svg#helveticaltstd-lightcond', font) format('svg');
 }
 
 @font-face {
@@ -75,23 +19,9 @@
     style:  normal;
   }
 
-  src: asset-url('bebasneue-webfont.eot');
-  src: asset-url('bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
-       asset-url('bebasneue-webfont.woff') format('woff'),
-       asset-url('bebasneue-webfont.ttf') format('truetype'),
-       asset-url('bebasneue-webfont.svg#bebas_neueregular') format('svg');
-}
-
-@font-face {
-  font: {
-    family: "Bebas";
-    weight: normal;
-    style:  normal;
-  }
-
-  src: asset-url('bebas.eot');
-  src: asset-url('bebas.eot?#iefix') format('embedded-opentype'),
-       asset-url('bebas.woff') format('woff'),
-       asset-url('bebas.ttf') format('truetype'),
-       asset-url('bebas.svg#bebasregular') format('svg');
+  src: asset-url('bebasneue-webfont.eot', font);
+  src: asset-url('bebasneue-webfont.eot?#iefix', font) format('embedded-opentype'),
+       asset-url('bebasneue-webfont.woff', font) format('woff'),
+       asset-url('bebasneue-webfont.ttf', font) format('truetype'),
+       asset-url('bebasneue-webfont.svg#bebas_neueregular', font) format('svg');
 }

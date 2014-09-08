@@ -19,11 +19,6 @@ form{
 
 /* Home */
 
-html.home{
-	background: url(/assets/home/clothingBackground.jpg) center center no-repeat;
-	background-size: cover;
-}
-
 #home{
 }
 
@@ -36,7 +31,7 @@ html.home{
 	background-color: rgba(255, 255, 255, .95);
 	width: 700px;
 	border: 2px solid #000;
-	margin: 80px auto 120px;
+	margin: 80px auto;
 	height: 438px;
 }
 
@@ -244,6 +239,17 @@ html.home{
 	font-size: 14px;
 	text-align: center;
 }
+
+.bg {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  z-index: -1;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
  
 
 
@@ -256,11 +262,6 @@ html.home{
 .brandon{
 	font-family: "Helvetica LT Std", "Helvetica", "Arial", sans-serif;
 	letter-spacing: 1px;
-}
-
-html.refer {
-	background: url(/assets/refer/clothngBackground3.jpg) center center no-repeat;
-	background-size: cover;
 }
 
 #referBox {
@@ -328,7 +329,7 @@ html.refer {
 
 #refer .share-wrap{
 	display: block;
-	width: 608px;
+	width: 650px;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .13em;
@@ -485,7 +486,7 @@ html.refer {
 
 #refer .prizes .products li.product .circle{
 	height: 30px;
-	width: 28px;
+	width: 29px;
 	border-radius: 0;
 	border: 2px solid #000;
 	text-align: center;
@@ -493,7 +494,7 @@ html.refer {
 	overflow: hidden;
 	font: 18px/32px "Bebas Neue", Helvetica, sans-serif;
 	margin: 0 auto;
-	padding: 0 0 0 2px;
+	padding: 0 0 0 1px;
 }
 
 #refer .prizes .products li.product .sep{
@@ -609,7 +610,15 @@ html.refer {
 	text-decoration: none;
 }
 
-#refer .prizes .products li.product.last .circle .numberReplace {
+.bold {
+	font-weight: bold;
+}
+
+.red {
+	color: #CC0019;
+}
+
+/*#refer .prizes .products li.product.last .circle .numberReplace {
 	visibility: hidden;
 }
 
@@ -617,6 +626,11 @@ html.refer {
 	content: '?';
 	visibility: visible;
 	
+}*/
+
+#refer .prizes .products li.product.last,
+.nothing {
+	display: none;
 }
 
 
@@ -677,17 +691,102 @@ only screen and (min-device-pixel-ratio: 2) {
 }
 
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
-	#infoBox {
+	.bg {
+		display: none;
+	}
+
+	#infoBox,
+	#referBox {
 		width: 300px;
 	}
 
-	#infoBox .hero img {
+	#referBox {
+		height: 1200px;
+	}
+
+	#referBox .hero {
+		height: 540px;
+	}
+
+	#infoBox .hero img,
+	#referBox .hero img {
 		width: 220px;
 	}
 
 	#home .hero .large {
 		width: 288px;
+		font-size: 22px
+	}
+
+	#home .form-wrap,
+	#refer .share-wrap {
+		width: 280px;
+	}
+
+	#home .form-wrap .email,
+	#refer .share-wrap .copy-link {
+		width: 238px;
+		border-radius: 0;
+	}
+
+	#home .form-wrap .byline {
+		font-size: 18px
+	}
+
+	#home .form-wrap .submit {
+		width: 278px;
+		-webkit-appearance: none;
+		border-radius: 0;
+	}
+
+	#refer .page-content {
+		width: 280px;
+	}
+
+	#refer .prizes ul.products {
+		margin-top: 20px;
+		height: 100px
+	}
+
+	#refer .prizes .products li.title {
+		width: 280px;
+		height: 90px;
+	}
+
+	#refer .prizes .products li.product {
+		width: 280px;
+		height: 70px;
+	}
+
+	#refer .prizes .products li.title .friends,
+	#refer .prizes .products li.title .rewards,
+	#refer .prizes .products li.product p {
+		display: inline-block;
+		width: 138px;
+		margin-top: 0;
+	}
+
+	#refer .prizes .products li.product p {
+		text-align: left;
+	}
+
+	#refer .prizes p.place {
+		display: inline-block;
+	}
+
+	#refer .prizes .products li.product .circle {
+		display: inline-block;
+		margin: 0px 30px;
+
+	}
+
+	#refer .prizes .products li.product .sep {
+		display: inline-block;
+		margin: 13px 16px 13px;
+		width: 3px;
+		height: 2px;
 	}
 }
+
 
 
