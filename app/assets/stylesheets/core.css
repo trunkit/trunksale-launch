@@ -684,6 +684,25 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 }
 
+/* iPads (portrait and landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	#home .hero {
+		height: 270px;
+	}
+
+	#referbox {
+		width: 725px;
+	}
+
+	#referBox .hero {
+		height: 540px;
+	}
+
+	#refer .page-content {
+		width: 640px;
+	}
+}
+
 @media screen and (max-device-width: 480px) and (orientation: portrait), (max-width: 480px), screen and (max-device-width: 480px) and (orientation: landscape) {
 	/*.bg {
 		display: none;
