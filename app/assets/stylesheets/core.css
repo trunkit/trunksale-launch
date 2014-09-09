@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require reset
+ *= require fonts
  *= require_self
  */
 
@@ -44,7 +45,7 @@ form{
 #home .hero{
 	width: 100%;
 	height: 270px;
-	
+
 	overflow: hidden;
 	position: relative;
 	letter-spacing: .09em;
@@ -242,7 +243,7 @@ form{
 
 .bg {
   position: fixed;
-  top: 0; 
+  top: 0;
   left: 0;
   z-index: -1;
 
@@ -250,7 +251,7 @@ form{
   min-width: 100%;
   min-height: 100%;
 }
- 
+
 
 
 /* Refer a friend page */
@@ -625,7 +626,7 @@ form{
 #refer .prizes .products li.product.last .circle .numberReplace:before {
 	content: '?';
 	visibility: visible;
-	
+
 }*/
 
 #refer .prizes .products li.product.last,
