@@ -688,15 +688,17 @@ form{
 /* iPads (portrait and landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	#home .hero {
-		height: 330px;
+	}
+
+	#home .form-wrap .submit {
+		-webkit-appearance: none;
+		border-radius: 0;
 	}
 
 	#infoBox {
-		height: 490px;
 	}
 
 	#referBox {
-		height: 760px;
 		width: 700px;
 	}
 
@@ -715,6 +717,7 @@ form{
 	#refer .prizes .products li.title .rewards {
 		margin-top: 16px;
 	}
+
 }
 
 @media screen and (max-device-width: 480px) and (orientation: portrait), (max-width: 480px), screen and (max-device-width: 480px) and (orientation: landscape) {
@@ -729,11 +732,19 @@ form{
 	}
 
 	#referBox {
-		height: 1110px;
+		height: 980px;
+	}
+
+	#infoBox {
+		height: 386px;
 	}
 
 	#referBox .hero {
-		height: 540px;
+		height: 434px;
+	}
+
+	#home .hero {
+		height: 220px;
 	}
 
 	#infoBox .hero img,
@@ -771,10 +782,14 @@ form{
 		width: 280px;
 	}
 
-	#refer .share-wrap .social-links .fb,
-	#refer .share-wrap .social-links .twit
-	{
-		background-size: 50px 50px;
+	#refer .share-wrap .social-links .fb{
+	    background: url(/assets/refer/fb@2x.png);
+	    background-size: 50px 50px;
+	}
+
+	#refer .share-wrap .social-links .twit{
+		background: url(/assets/refer/twit@2x.png);
+	    background-size: 50px 50px;
 	}
 
 	#refer .prizes .progress {
