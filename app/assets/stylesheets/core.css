@@ -619,15 +619,15 @@ form{
 	color: #CC0019;
 }
 
-/*#refer .prizes .products li.product.last .circle .numberReplace {
-	visibility: hidden;
-}
-
-#refer .prizes .products li.product.last .circle .numberReplace:before {
-	content: '?';
-	visibility: visible;
-
-}*/
+//#refer .prizes .products li.product.last .circle .numberReplace {
+//  visibility: hidden;
+//}
+//
+//#refer .prizes .products li.product.last .circle .numberReplace:before {
+//  content: '?';
+//  visibility: visible;
+//
+//}
 
 #refer .prizes .products li.product.last,
 .nothing {
@@ -639,51 +639,51 @@ form{
 /*
 	RETINA
 */
-/*@media only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-device-pixel-ratio: 2) {
-
-	#home .form-wrap .key{
-		background: url(/assets/home/key@2x.png) 0 0 no-repeat;
-		background-size: 46px 19px;
-	}
-
-	#refer .share-wrap .social-links .fb{
-		background: url(/assets/refer/fb@2x.png);
-		background-size: 50px 50px;
-	}
-
-	#refer .share-wrap .social-links .twit{
-		background: url(/assets/refer/twit@2x.png);
-		background-size: 50px 50px;
-	}
-
-	#refer .prizes .progress{
-		background: url(/assets/refer/progress-bg@2x.png) 0 0 repeat-x;
-		background-size: 1px 4px;
-	}
-
-	#refer .prizes .progress .mover .bar{
-		background: url(/assets/refer/progress-done@2x.png) 0 0 repeat-x;
-		background-size: 1px 4px;
-	}
-
-	#refer .prizes .progress .mover .razor{
-		background: url(/assets/refer/razor@2x.png) 0 0 no-repeat;
-		background-size: 82px 23px;
-	}
-
-	#refer .prizes .products li.product .caret{
-		background: url(/assets/refer/caret@2x.png) center center no-repeat;
-		background-size: 16px 10px;
-	}
-
-	#refer .prizes .products li.product.selected .caret{
-		background: url(/assets/refer/caret-selected@2x.png) center center no-repeat;
-		background-size: 16px 10px;
-	}*/
-}
+//@media only screen and (min--moz-device-pixel-ratio: 2),
+//only screen and (-o-min-device-pixel-ratio: 2/1),
+//only screen and (-webkit-min-device-pixel-ratio: 2),
+//only screen and (min-device-pixel-ratio: 2) {
+//
+//  #home .form-wrap .key{
+//    background: url(/assets/home/key@2x.png) 0 0 no-repeat;
+//    background-size: 46px 19px;
+//  }
+//
+//  #refer .share-wrap .social-links .fb{
+//    background: url(/assets/refer/fb@2x.png);
+//    background-size: 50px 50px;
+//  }
+//
+//  #refer .share-wrap .social-links .twit{
+//    background: url(/assets/refer/twit@2x.png);
+//    background-size: 50px 50px;
+//  }
+//
+//  #refer .prizes .progress{
+//    background: url(/assets/refer/progress-bg@2x.png) 0 0 repeat-x;
+//    background-size: 1px 4px;
+//  }
+//
+//  #refer .prizes .progress .mover .bar{
+//    background: url(/assets/refer/progress-done@2x.png) 0 0 repeat-x;
+//    background-size: 1px 4px;
+//  }
+//
+//  #refer .prizes .progress .mover .razor{
+//    background: url(/assets/refer/razor@2x.png) 0 0 no-repeat;
+//    background-size: 82px 23px;
+//  }
+//
+//  #refer .prizes .products li.product .caret{
+//    background: url(/assets/refer/caret@2x.png) center center no-repeat;
+//    background-size: 16px 10px;
+//  }
+//
+//  #refer .prizes .products li.product.selected .caret{
+//    background: url(/assets/refer/caret-selected@2x.png) center center no-repeat;
+//    background-size: 16px 10px;
+//  }
+//}
 
 /* iPads (portrait and landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -718,10 +718,10 @@ only screen and (min-device-pixel-ratio: 2) {
 }
 
 @media screen and (max-device-width: 480px) and (orientation: portrait), (max-width: 480px), screen and (max-device-width: 480px) and (orientation: landscape) {
-	/*.bg {
-		display: none;
-	}
-*/
+//  .bg {
+//    display: none;
+//  }
+
 	#infoBox,
 	#referBox {
 		width: 300px;
