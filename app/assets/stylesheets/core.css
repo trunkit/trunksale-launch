@@ -690,6 +690,11 @@ form{
 	#home .hero {
 	}
 
+	#home .form-wrap .email,
+	#refer .share-wrap .copy-link {
+		border-radius: 0;
+	}
+
 	#home .form-wrap .submit {
 		-webkit-appearance: none;
 		border-radius: 0;
