@@ -369,7 +369,7 @@ form{
 }
 
 #refer .share-wrap .social-links{
-	width: 150px;
+	width: 200px;
 	height: 37px;
 	margin: 15px auto 0;
 	text-align: center;
@@ -380,18 +380,25 @@ form{
 	margin: 0 5px;
 }
 
+#refer .share-wrap .social-links .emailShare{
+	background: url(/assets/refer/email@2x.png);
+	background-size: 50px 50px;
+	width: 50px;
+	height: 50px;
+}
+
 #refer .share-wrap .social-links .fb{
-	background: url(/assets/refer/fb.png);
+	background: url(/assets/refer/fb2@2x.png);
 	background-size: 50px 50px;
 	width: 50px;
 	height: 50px;
 }
 
 #refer .share-wrap .social-links .twit{
-	background: url(/assets/refer/twit.png);
+	background: url(/assets/refer/twit2@2x.png);
 	background-size: 50px 50px;
 	width: 50px;
-	height: 50px
+	height: 50px;
 }
 
 #refer .share-wrap .social-links .sep{
@@ -650,12 +657,12 @@ form{
 //  }
 //
 //  #refer .share-wrap .social-links .fb{
-//    background: url(/assets/refer/fb@2x.png);
+//    background: url(/assets/refer/fb2@2x.png);
 //    background-size: 50px 50px;
 //  }
 //
 //  #refer .share-wrap .social-links .twit{
-//    background: url(/assets/refer/twit@2x.png);
+//    background: url(/assets/refer/twit2@2x.png);
 //    background-size: 50px 50px;
 //  }
 //
@@ -759,7 +766,8 @@ form{
 
 	#home .hero .large {
 		width: 288px;
-		font-size: 22px
+		font-size: 22px;
+		margin: 12px auto 0;
 	}
 
 	#home .form-wrap,
@@ -774,7 +782,7 @@ form{
 	}
 
 	#home .form-wrap .byline {
-		font-size: 18px
+		font-size: 18px;
 	}
 
 	#home .form-wrap .submit {
@@ -788,12 +796,17 @@ form{
 	}
 
 	#refer .share-wrap .social-links .fb{
-	    background: url(/assets/refer/fb@2x.png);
+	    background: url(/assets/refer/email@2x.png);
+	    background-size: 50px 50px;
+	}
+
+	#refer .share-wrap .social-links .fb{
+	    background: url(/assets/refer/fb2@2x.png);
 	    background-size: 50px 50px;
 	}
 
 	#refer .share-wrap .social-links .twit{
-		background: url(/assets/refer/twit@2x.png);
+		background: url(/assets/refer/twit2@2x.png);
 	    background-size: 50px 50px;
 	}
 
