@@ -12,19 +12,25 @@ class User < ActiveRecord::Base
 
     REFERRAL_STEPS = [
         {
-            'count' => 5,
+            'count' => 2,
             "html" => "Early Access<br>to The Sale",
             "class" => "two",
-            "image" =>  ActionController::Base.helpers.asset_path("refer/cream-tooltip@2x.png")
+            "image" =>  ActionController::Base.helpers.asset_path("refer/earlyAccess@2x.png")
         },
         {
-            'count' => 15,
-            "html" => "Free Shipping<br>For Life",
+            'count' => 5,
+            "html" => "An Additonal 5% OFF<br>Your First Purchase",
             "class" => "three",
+            "image" => ActionController::Base.helpers.asset_path("refer/cream-tooltip@2x.png")
+        },
+        {
+            'count' => 10,
+            "html" => "Free Shipping<br>For Life",
+            "class" => "four",
             "image" => ActionController::Base.helpers.asset_path("refer/truman@2x.png")
         },
         {
-            'count' => 50,
+            'count' => 25,
             "html" => "A Gift Card to<br>Your Favorite Boutique",
             "class" => "four",
             "image" => ActionController::Base.helpers.asset_path("refer/winston@2x.png")
