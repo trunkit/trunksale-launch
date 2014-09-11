@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
     belongs_to :referrer, :class_name => "User", :foreign_key => "referrer_id"
     has_many :referrals, :class_name => "User", :foreign_key => "referrer_id"
-    
+
     attr_accessible :email
 
     validates :email, :uniqueness => true, :format => { :with => /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/i, :message => "Invalid email format." }
@@ -30,7 +30,7 @@ class User < ActiveRecord::Base
             "image" => ActionController::Base.helpers.asset_path("refer/winston@2x.png")
         },
         {
-            'count' => 100, 
+            'count' => 100,
             "html" => "One Piece from Jennifer<br>Fisher Jewelry",
             "class" => "five",
             "image" => ActionController::Base.helpers.asset_path("refer/blade-explain@2x.png")
@@ -52,6 +52,6 @@ class User < ActiveRecord::Base
     end
 
     def send_welcome_email
-        UserMailer.delay.signup_email(self)
+        UserMailer.signup_email(self)
     end
 end
