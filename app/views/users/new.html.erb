@@ -13,10 +13,10 @@
       <p class="go-to brandon">In the meantime, head to <a href="http://www.thetrunksale.com/">WWW.THETRUNKSALE.COM</a></p>
       <p class="again brandon">Thank You Again!</p>
     <% else %>
-      <p class="byline brandon">Get early access</p>
+      <p class="byline brandon">Request an Invite</p>
       <%= form_for @user, :url => { :action => "create" } do |f| %>
         <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
-        <input class="submit brandon" name="commit" type="submit" value="Step Inside" />
+        <input class="submit brandon" name="commit" type="submit" value="Enter" />
       <% end %>
     <% end %>
   </div>

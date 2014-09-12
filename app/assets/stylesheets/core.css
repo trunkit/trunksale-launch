@@ -95,12 +95,12 @@ form{
 
 #home .form-wrap .byline{
 	text-transform: uppercase;
-	color: #000;
+	color: #CC0019;
 	text-align: center;
 	font-weight: bold;
 	letter-spacing: 2px;
 	margin: 15px 0 10px;
-	font: 20px "Bebas Neue", Helvetica, sans-serif;
+	font: 22px "Bebas Neue", Helvetica, sans-serif;
 }
 
 #home .form-wrap .email{
