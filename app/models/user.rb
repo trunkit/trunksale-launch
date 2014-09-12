@@ -32,15 +32,9 @@ class User < ActiveRecord::Base
         {
             'count' => 25,
             "html" => "A Gift Card to<br>Your Favorite Boutique",
-            "class" => "four",
+            "class" => "five",
             "image" => ActionController::Base.helpers.asset_path("refer/winston@2x.png")
         },
-        {
-            'count' => 100,
-            "html" => "One Piece from Jennifer<br>Fisher Jewelry",
-            "class" => "five",
-            "image" => ActionController::Base.helpers.asset_path("refer/blade-explain@2x.png")
-        }
     ]
 
     private
