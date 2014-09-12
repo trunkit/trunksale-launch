@@ -640,10 +640,10 @@ span.numberReplace::after {
 //
 //}
 
-#refer .prizes .products li.product.last,
-.nothing {
-	display: none;
-}
+//#refer .prizes .products li.product.last,
+//.nothing {
+//	display: none;
+//}
 
 /* iPads (portrait and landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
