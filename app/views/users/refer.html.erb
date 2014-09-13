@@ -1,3 +1,20 @@
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '270483189829420',
+      xfbml      : true,
+      version    : 'v2.1'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 <img src="/assets/refer/clothngBackground3.jpg" class="bg" alt="">
 <div id="referBox">
     <div class="hero">
@@ -70,7 +87,15 @@
                 <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
             <% end %>
             <p class="check brandon">Keep checking</p>
-
+            <div class="socialFollow">
+                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true">
+                </div>
+                <a href="https://twitter.com/teamtrunksale" class="twitter-follow-button" data-show-count="false">
+                   Follow @teamtrunksale
+                </a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                </script>
+            </div>
             <p class="ship brandon">Our boutique partners ship to the U.S. (& Canada Soon).</p>        
             <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>
         </div>

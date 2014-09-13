@@ -270,7 +270,7 @@ form{
 	width: 900px;
 	border: 2px solid #000;
 	margin: 30px auto 30px;
-	height: 700px;
+	height: 716px;
 }
 
 #referBox .hero img {
@@ -595,7 +595,7 @@ form{
 	color: #000;
 	width: 100%;
 	font-weight: 500;
-	margin-top: 5px;
+	margin: 5px 0 6px;
 }
 
 #refer .prizes p.ship{
@@ -604,7 +604,7 @@ form{
 	color: #000;
 	width: 100%;
 	font-weight: 500;
-	margin-top: 15px;
+	margin-top: 6px;
 }
 
 #refer .prizes a.policy{
@@ -628,6 +628,16 @@ form{
 
 span.numberReplace::after {
 	content: " Friends";
+}
+
+.fb_iframe_widget {
+	position: absolute;
+	left: 34%
+}
+
+#twitter-widget-0 {
+	position: absolute;
+	right: 34%
 }
 
 //#refer .prizes .products li.product.last .circle .numberReplace {
