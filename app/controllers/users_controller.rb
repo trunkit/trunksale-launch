@@ -84,6 +84,10 @@ class UsersController < ApplicationController
 
     end
 
+    def sororityConnect
+
+    end
+
     def redirect
         redirect_to root_path, :status => 404
     end

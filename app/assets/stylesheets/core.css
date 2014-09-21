@@ -276,7 +276,7 @@ form{
 #referBox .hero img {
 	width: 325px;
 	display: block;
-	margin: 25px auto 0;
+	margin: 40px auto 0;
 }
 
 #refer .page-content{
@@ -309,6 +309,20 @@ form{
 	font-size: 14px;
 }
 
+a.sororityConnect {
+	width: 188px;
+	background: #000;
+	height: 36px;
+	display: inline-block;
+	float: right;
+	color: #FFF;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-decoration: none;
+	font: 14px/36px "Bebas Neue", Helvetica, sans-serif;
+	text-align: center;
+}
+
 #refer .header .logo{
 	font-weight: normal;
 	font-size: 0;
@@ -326,6 +340,7 @@ form{
 	height: 385px;
 	overflow: hidden;
 }
+
 
 
 #refer .share-wrap{
@@ -668,9 +683,6 @@ span.numberReplace::after {
 	#home .form-wrap .submit {
 		-webkit-appearance: none;
 		border-radius: 0;
-	}
-
-	#infoBox {
 	}
 
 	#referBox {
