@@ -321,6 +321,7 @@ a.sororityConnect {
 	text-decoration: none;
 	font: 14px/36px "Bebas Neue", Helvetica, sans-serif;
 	text-align: center;
+	display: none;
 }
 
 #refer .header .logo{
