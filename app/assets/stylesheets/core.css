@@ -716,7 +716,7 @@ span.numberReplace::after {
 
 }
 
-@media screen and (max-device-width: 480px) and (orientation: portrait), (max-width: 480px), screen and (max-device-width: 480px) and (orientation: landscape) {
+@media screen and (max-device-width: 480px) and (orientation: portrait), screen and (max-device-width: 480px) and (orientation: landscape) {
 //  .bg {
 //    display: none;
 //  }
