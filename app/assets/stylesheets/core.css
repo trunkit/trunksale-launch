@@ -740,10 +740,10 @@ span.numberReplace::after {
 	}
 
 	#home .hero {
-		height: 220px;
+		height: 150px;
 	}
 
-	#infoBox .hero img,
+	#infoBox img,
 	#referBox .hero img {
 		width: 220px;
 	}
