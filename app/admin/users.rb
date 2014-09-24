@@ -4,9 +4,9 @@ ActiveAdmin.register User do
   index do
   	column :id
   	column "Email", :email, :sortable => :email
-	column("Count") {|user| user.referrals.count}
+	 column("Count") {|user| user.referrals.count}
   	column "Referrer", :referrer
-  	column "created_at", :created_at
+  	column "created_at", :created_at, :sortable => :created_at
   end
 
   csv do 
