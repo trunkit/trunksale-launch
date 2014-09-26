@@ -27,9 +27,9 @@
             <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
             <% twitter_message = "Can’t wait to save up to 70% on #designerfashion. Thanks @teamtrunksale!" %>
             <div class="social-links">
-                <a href="mailto:?subject=I%20Found%20A%20Shopping%20Site%20You'll%20Love&body=The%20website%20is%20called%20The%20Trunksale.%20It's%20kind%20of%20like%20the%20Nordstrom%20Rack,%20but%20all%20of%20the%20inventory%20is%20sourced%20from%20the%20top%20boutiques%20across%20the%20country.%20Just%20visit%20this%20link%20to%20check%20it%20out%20http://thetrunksale.com/?ref=<%= CGI::escape(@user.referral_code) %>" class="emailShare" onClick="_gaq.push(['_trackEvent', 'Sharing', 'Email']);"></a>
-                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=The Trunksale" class="fb" target="_blank" onClick="_gaq.push(['_trackEvent', 'Sharing', 'Facebook']);"></a>
-                <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank" onClick="_gaq.push(['_trackEvent', 'Sharing', 'Twitter']);"></a>
+                <a href="mailto:?subject=I%20Found%20A%20Shopping%20Site%20You'll%20Love&body=The%20website%20is%20called%20The%20Trunksale.%20It's%20kind%20of%20like%20the%20Nordstrom%20Rack,%20but%20all%20of%20the%20inventory%20is%20sourced%20from%20the%20top%20boutiques%20across%20the%20country.%20Just%20visit%20this%20link%20to%20check%20it%20out%20http://thetrunksale.com/?ref=<%= CGI::escape(@user.referral_code) %>" class="emailShare"></a>
+                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=The Trunksale" class="fb" target="_blank"></a>
+                <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
             </div>
         </div>
     </div>

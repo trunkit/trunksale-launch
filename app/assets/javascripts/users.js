@@ -13,5 +13,19 @@ $(document).ready(function(){
 	}
     $('li.product:last-child > .circle').replaceWith("?");*/
 
+    //GA email click event
+    $('.emailShare').click(function() {
+        ga('send', 'event', 'Sharing', 'click', 'email');
+    });
+
+    //GA twitter click event
+    $('.twit').click(function() {
+        ga('send', 'event', 'Sharing', 'click', 'twitter');
+    });
+
+    //GA facebook click event
+    $('.fb').click(function() {
+        ga('send', 'event', 'Sharing', 'click', 'facebook');
+    });
 
 })
