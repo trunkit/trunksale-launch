@@ -14,6 +14,8 @@ Prelaunchr::Application.routes.draw do
 
   get 'sorority' => 'users#sororityConnect'
 
+  get 'share' => 'users#share'
+
   unless Rails.application.config.consider_all_requests_local
       match '*not_found', to: 'users#redirect', :format => false
   end

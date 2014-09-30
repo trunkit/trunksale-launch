@@ -1,0 +1,108 @@
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '270483189829420',
+      xfbml      : true,
+      version    : 'v2.1'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<img src="/assets/refer/clothngBackground3.jpg" class="bg" alt="">
+<div id="referBox">
+    <div class="hero">
+        <a href="/sorority" class="sororityConnect">Sorority Connect</a>
+        <img src="assets/home/TheTrunksaleLogo.png">
+        <% 
+        user_id = @user.id
+        %>
+        <div class="share-wrap">
+            <p class="why brandon">Don't leave your friends behind</p>
+            <p class="title brandon">INVITE FRIENDS & Receive Gifts <%= user_id %> </p>
+            <!--<<p class="title brandon">You're in! But there are <%= user_id %> shoppers ahead of you</p> -->
+            <p class="subtitle brandon">Share your unique link via <span class="bold">email, Facebook or Twitter</span> and earn gifts when your friends sign up. <!--<span class="nothing">The first 5 people to have 100 friends join will receive a piece from <span class="bold">Jennifer Fisher Jewelry</span>.</span>--></p>
+            <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
+            <% twitter_message = "Can’t wait to save up to 70% on #designerfashion. Thanks @teamtrunksale!" %>
+            <div class="social-links">
+                <a href="mailto:?subject=I%20Found%20A%20Shopping%20Site%20You'll%20Love&body=The%20website%20is%20called%20The%20Trunksale.%20It's%20kind%20of%20like%20the%20Nordstrom%20Rack,%20but%20all%20of%20the%20inventory%20is%20sourced%20from%20the%20top%20boutiques%20across%20the%20country.%20Just%20visit%20this%20link%20to%20check%20it%20out%20http://thetrunksale.com/?ref=<%= CGI::escape(@user.referral_code) %>" class="emailShare"></a>
+                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=The Trunksale" class="fb" target="_blank"></a>
+                <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+
+    <% 
+        referrals_count = @user.referrals.count
+
+        stops = User::REFERRAL_STEPS
+
+        found = nil
+
+        stops.reverse_each { |stop|
+            if stop["count"] <= referrals_count and !found
+                stop["selected"] = true
+                found = stop
+            else
+                stop["selected"] = false
+            end
+        }   
+     %>
+    <div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
+        <div class="page-content">
+            <p class="callout brandon">Here's How It Works:</p>
+            <ul class="products clearfix">
+                <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">The Trunksale Gifts</p></li>
+                <% stops.each do |stop| %>
+                    <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
+                        <div class="circle"><span class="numberReplace"><%= stop["count"] %></span></div>
+                        <div class="sep"></div>
+                        <div class="description"><p><%= stop["html"].html_safe %></p></div>
+                        <div class="tooltip">
+                            <img src="<%= stop["image"] %>" height="254">
+                        </div>
+                    </li>
+                <% end %>
+            </ul>
+
+            <div class="progress">
+                <div class="mover">
+                    <div class="bar clearfix"></div>
+                </div>
+            </div>
+
+            <%
+                words = ''
+                if referrals_count == 1
+                    words = 'friend has'
+                elsif 
+                    words = 'friends have'
+                end
+            %>
+
+            <% if referrals_count == 0 %>
+                <p class="place brandon"><span>No</span> friends have joined...Yet!</p>
+            <% else %>
+                <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
+            <% end %>
+            <p class="check brandon">Keep checking</p>
+            <div class="socialFollow">
+                <div class="fb-like" data-href="https://facebook.com/thetrunksale" data-layout="button" data-action="like" data-show-faces="true" data-share="true">
+                </div>
+                <a href="https://twitter.com/teamtrunksale" class="twitter-follow-button" data-show-count="false">
+                   Follow @teamtrunksale
+                </a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                </script>
+            </div>
+            <p class="ship brandon">Our boutique partners ship to the U.S. (& Canada Soon).</p>        
+            <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>
+        </div>
+    </div>
+</div>
