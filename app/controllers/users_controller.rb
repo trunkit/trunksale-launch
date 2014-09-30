@@ -14,7 +14,18 @@ class UsersController < ApplicationController
         end
     end
 
-    def create
+    def share
+        @bodyId = 'home'
+        @is_mobile = mobile_device?
+
+        @user = User.new
+
+        respond_to do |format|
+            format.html # share.html.erb
+        end
+    end
+
+    def create 
         # Get user to see if they have already signed up
         @user = User.find_by_email(params[:user][:email]);
 
