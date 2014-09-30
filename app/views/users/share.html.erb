@@ -3,8 +3,9 @@
   <img src="assets/home/TheTrunksaleLogo.png">
   <div class="hero">
     <div class="copy">
-      <p class="large brandon">Top boutiques from around the U.S. are teaming up to bring you exclusive designer fashion <span class="red">up to 70% off</span></p>
-      <img src="assets/home/BrandList.png" class="brandList">
+      <p class="large brandon">Welcome Back!</p>
+      <p class="small brandon">Re-enter your email below to log back in. Check your progress and 
+        keep sharing with friends.</p>
     </div>
   </div>
 
@@ -15,9 +16,9 @@
       <p class="go-to brandon">In the meantime, head to <a href="http://www.thetrunksale.com/">WWW.THETRUNKSALE.COM</a></p>
       <p class="again brandon">Thank You Again!</p>
     <% else %>
-      <p class="byline brandon">Request an Invite</p>
+      <p class="byline brandon">Log In</p>
       <%= form_for @user, :url => { :action => "create" } do |f| %>
-        <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
+        <%= f.text_field :email, :placeholder => "Email Address", :class => "email brandon" %>
         <input class="submit brandon" name="commit" type="submit" value="Enter" />
       <% end %>
     <% end %>
