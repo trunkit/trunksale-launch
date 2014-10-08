@@ -24,17 +24,20 @@
         user_id = @user.id
         %>
         <div class="share-wrap">
-            <p class="why brandon">Don't leave your friends behind</p>
-            <p class="title brandon">INVITE FRIENDS & Receive Gifts </p>
+            <p class="title brandon">We're launching soon: Share now for early access!</p>
             <!--<<p class="title brandon">You're in! But there are <%= user_id %> shoppers ahead of you</p> -->
-            <p class="subtitle brandon">Share your unique link via <span class="bold">email, Facebook or Twitter</span> and earn gifts when your friends sign up. <!--<span class="nothing">The first 5 people to have 100 friends join will receive a piece from <span class="bold">Jennifer Fisher Jewelry</span>.</span>--></p>
-            <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
+            <p class="subtitle brandon">Share with your friends to get early access and shop the hottest 
+            brands before anyone else. 
+            <br> You can also get an additional 5% off your first purchase, free shipping,
+            and more. <!--<span class="nothing">The first 5 people to have 100 friends join will receive a piece from <span class="bold">Jennifer Fisher Jewelry</span>.</span>--></p>
             <% twitter_message = "Can’t wait to save up to 70% on #designerfashion. Thanks @teamtrunksale!" %>
             <div class="social-links">
+                <p class="share-text brandon">Click Below to Share</p>
                 <a href="mailto:?subject=I%20Found%20A%20Shopping%20Site%20You'll%20Love&body=The%20website%20is%20called%20The%20Trunksale.%20It's%20kind%20of%20like%20the%20Nordstrom%20Rack,%20but%20all%20of%20the%20inventory%20is%20sourced%20from%20the%20top%20boutiques%20across%20the%20country.%20Just%20visit%20this%20link%20to%20check%20it%20out%20http://thetrunksale.com/?ref=<%= CGI::escape(@user.referral_code) %>" class="emailShare"></a>
                 <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=The Trunksale" class="fb" target="_blank"></a>
                 <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
             </div>
+            <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
         </div>
     </div>
 
