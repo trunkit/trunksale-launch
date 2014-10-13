@@ -32,8 +32,8 @@ form{
 	background-color: rgba(255, 255, 255, .95);
 	width: 700px;
 	border: 2px solid #000;
-	margin: 80px auto;
-	height: 438px;
+	margin: 50px auto;
+	height: 495px;
 }
 
 #infoBox img {
@@ -70,22 +70,21 @@ form{
 	display: none;
 }
 
-#home .hero .small{
+#home .form-wrap .small{
 	color: #000;
 	margin: 10px auto;
 	position: relative;
 	z-index: 2;
 	text-transform: none;
-	text-align: center;
-	width: 600px;
 	letter-spacing: 1px;
+	text-align: center;
 	font: 18px "Helvetica LT Std", Helvetica, sans-serif;
 }
 
 #home .form-wrap{
 	height: 80px;
-	width: 411px;
-	margin: 0 auto;
+	width: 440px;
+	margin: 25px auto;
 }
 
 #home .form-wrap .key{
@@ -119,7 +118,7 @@ form{
 
 #home .form-wrap .submit{
 	width: 296px;
-	background: #000;
+	background: #CC0019;
 	height: 46px;
 	display: block;
 	margin: 8px auto;
@@ -722,7 +721,7 @@ span.numberReplace::after {
 
 }
 
-@media screen and (max-device-width: 480px) and (orientation: portrait), screen and (max-device-width: 480px) and (orientation: landscape) {
+@media screen and (max-device-width: 480px) and (orientation: portrait), (max-width: 480px), screen and (max-device-width: 480px) and (orientation: landscape) {
 //  .bg {
 //    display: none;
 //  }
@@ -738,7 +737,7 @@ span.numberReplace::after {
 	}
 
 	#infoBox {
-		height: 386px;
+		height: 490px;
 	}
 
 	#referBox .hero {
@@ -757,7 +756,6 @@ span.numberReplace::after {
 	#home .hero .large {
 		width: 288px;
 		font-size: 22px;
-		margin: 12px auto 0;
 	}
 
 	#home .form-wrap,
