@@ -55,5 +55,4 @@ Prelaunchr::Application.configure do
     authentication:        :plain,
     enable_startttls_auto: true
   }
-
 end
