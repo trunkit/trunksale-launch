@@ -796,6 +796,7 @@ span.numberReplace::after {
 
 	#referBox {
 		height: 100%;
+		margin: 10px auto;
 	}
 
 	#infoBox {
@@ -803,22 +804,23 @@ span.numberReplace::after {
 	}
 
 	#referBox .hero {
-		height: 490px;
+		height: 100%;
 	}
 
 	#refer .share-wrap .title {
-		font: 25px "Bebas Neue", Helvetica, sans-serif
+		font: 22px "Bebas Neue", Helvetica, sans-serif
 	}
 
 	#refer .share-wrap .subtitle {
 		font: 14px "Helvetica LT Std", Helvetica, sans-serif;
 		line-height: 22px;
-
+		margin-top: 8px;
 	}
 
-	#refer .share-wrap .social-links a, #refer .share-wrap .social-links div{
+	#refer .share-wrap .social-links a, 
+	#refer .share-wrap .social-links div{
 		display: inline-block;
-		margin: 5px 5px;
+		margin: 2px auto;
 	}
 
 	#refer .share-wrap .social-links .emailShare {
@@ -846,16 +848,36 @@ span.numberReplace::after {
 	a.sharingBox {
 		width: 200px;
 		height: 35px;
+		font-size: 16px;
+	}
+
+	a.sharingBox.email {
+		color: #fff;
+		background: #D50A25;
+	}
+
+	a.sharingBox.facebook {
+		color: #fff;
+		background: #3C5A96;
+	}
+
+	a.sharingBox.twitter {
+		color: #fff;
+		background: #55acee;
 	}
 
 	span.sharingText {
-		width: 170px;
+		width: 194px;
 		top: 9px;
 	}
 
 	#infoBox img,
 	#referBox .hero img {
 		width: 220px;
+	}
+
+	#referBox .hero img {
+		margin: 16px auto 0;
 	}
 
 	#home .hero .large {
