@@ -401,7 +401,7 @@ a.sororityConnect {
 
 #refer .share-wrap .social-links a, #refer .share-wrap .social-links div{
 	display: inline-block;
-	margin: 0 5px;
+	margin: 0px 5px;
 }
 
 a.sharingBox {
@@ -803,11 +803,54 @@ span.numberReplace::after {
 	}
 
 	#referBox .hero {
-		height: 520px;
+		height: 490px;
 	}
 
+	#refer .share-wrap .title {
+		font: 25px "Bebas Neue", Helvetica, sans-serif
+	}
+
+	#refer .share-wrap .subtitle {
+		font: 14px "Helvetica LT Std", Helvetica, sans-serif;
+		line-height: 22px;
+
+	}
+
+	#refer .share-wrap .social-links a, #refer .share-wrap .social-links div{
+		display: inline-block;
+		margin: 5px 5px;
+	}
+
+	#refer .share-wrap .social-links .emailShare {
+		background-size: 35px 35px;
+		width: 35px;
+		height: 35px;
+
+	}
+
+	#refer .share-wrap .social-links .twit{
+		background-size: 35px 35px;
+		width: 35px;
+		height: 35px;
+	}
+
+	#refer .share-wrap .social-links .fb{
+		background-size: 35px 35px;
+		width: 35px;
+		height: 35px;
+	}
 	#home .hero {
 		height: 150px;
+	}
+
+	a.sharingBox {
+		width: 200px;
+		height: 35px;
+	}
+
+	span.sharingText {
+		width: 170px;
+		top: 9px;
 	}
 
 	#infoBox img,
@@ -885,7 +928,7 @@ span.numberReplace::after {
 	}
 
 	#refer .share-wrap .social-links {
-		width: 190px;
+		width: 210px;
 	}
 
 	span.numberReplace::after {
