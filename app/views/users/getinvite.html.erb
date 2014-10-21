@@ -1,0 +1,25 @@
+<img src="/assets/home/clothingBackground.jpg" class="bg" alt="">
+<div id="infoBox">
+  <img src="assets/home/TheTrunksaleLogo.png">
+  <div class="hero getInvite">
+    <div class="copy">
+      <p class="large brandon">Want early access?</p>
+      <p class="small brandon instructions">Enter your email below and make sure to share The Trunksale with your friends on the next page. If you get just two friends to sign up you'll earn early access.</p>
+    </div>
+  </div>
+
+  <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
+    <% if Rails.application.config.ended %>
+      <p class="thanks brandon">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
+      <p class="compiling brandon">WE ARE COMPILING REWARDS RIGHT NOW AND WILL EMAIL<br/>COUPON CODES TO ALL RECIPIENTS IN THE NEXT DAY OR TWO</p>
+      <p class="go-to brandon">In the meantime, head to <a href="http://www.thetrunksale.com/">WWW.THETRUNKSALE.COM</a></p>
+      <p class="again brandon">Thank You Again!</p>
+    <% else %>
+      <p class="byline brandon">Enter your email</p>
+      <%= form_for @user, :url => { :action => "create" } do |f| %>
+        <%= f.text_field :email, :placeholder => "Email Address", :class => "email brandon" %>
+        <input class="submit brandon" name="commit" type="submit" value="Enter" />
+      <% end %>
+    <% end %>
+  </div>
+</div>

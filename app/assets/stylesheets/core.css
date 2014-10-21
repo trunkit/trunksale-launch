@@ -33,7 +33,6 @@ form{
 	width: 700px;
 	border: 2px solid #000;
 	margin: 50px auto;
-	height: 540px;
 }
 
 #infoBox img {
@@ -82,7 +81,6 @@ form{
 }
 
 #home .form-wrap{
-	height: 80px;
 	width: 440px;
 	margin: 25px auto;
 }
@@ -766,6 +764,16 @@ span.numberReplace::after {
 	padding: 20px 18px 10px 20px;
 }
 
+.instructions {
+	width:600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#home .hero.getInvite {
+	height: 130px;
+}
+
 /* iPads (portrait and landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	#home .hero {
@@ -821,10 +829,6 @@ span.numberReplace::after {
 	#referBox {
 		height: 100%;
 		margin: 10px auto;
-	}
-
-	#infoBox {
-		height: 490px;
 	}
 
 	#referBox .hero {

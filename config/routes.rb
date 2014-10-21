@@ -16,6 +16,8 @@ Prelaunchr::Application.routes.draw do
 
   get 'share' => 'users#share'
 
+  get 'getinvite' => 'users#getinvite'
+
   unless Rails.application.config.consider_all_requests_local
       match '*not_found', to: 'users#redirect', :format => false
   end
