@@ -33,7 +33,7 @@ form{
 	width: 700px;
 	border: 2px solid #000;
 	margin: 50px auto;
-	height: 495px;
+	height: 540px;
 }
 
 #infoBox img {
@@ -741,6 +741,30 @@ span.numberReplace::after {
 //.nothing {
 //	display: none;
 //}
+
+.signIn {
+	text-align: center;
+	font: 16px "Helvetica LT Std", Helvetica, sans-serif;
+}
+
+.signIn a {
+	text-decoration: none;
+	color: #000;
+}
+
+.signIn a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.signInToShop {
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+	font: 16px/31px "Bebas Neue", Helvetica, sans-serif;
+	letter-spacing: 2px;
+	padding: 20px 18px 10px 20px;
+}
 
 /* iPads (portrait and landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
