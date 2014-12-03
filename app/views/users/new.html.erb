@@ -1,16 +1,16 @@
 <img src="/assets/home/clothingBackground.jpg" class="bg" alt="">
 <div id="infoBox">
+  <a href="http://thetrunksale.com" class="signInToShop">Back to The Trunksale</a>
   <img src="assets/home/TheTrunksaleLogo.png">
   <div class="hero">
     <div class="copy">
-      <p class="large brandon"> <span class="red">A sale that never ends </span> <br>
-        Save up to 70% on the boutique fashion brands you love</p>
+      <p class="large brandon"> <span class="red">Invite Friends and earn gifts like free shipping for life</p>
       <img src="assets/home/BrandList.png" class="brandList">
     </div>
   </div>
 
   <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
-    <p class="small brandon"> We source directly from local boutiques to bring you denim, dresses, sweaters, and more at prices found nowhere else
+    <p class="small brandon"> The more friends that join the better the gifts get.
       </p>
     <% if Rails.application.config.ended %>
       <p class="thanks brandon">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
@@ -18,7 +18,7 @@
       <p class="go-to brandon">In the meantime, head to <a href="http://www.thetrunksale.com/">WWW.THETRUNKSALE.COM</a></p>
       <p class="again brandon">Thank You Again!</p>
     <% else %>
-      <p class="byline brandon">Request an Invite</p>
+      <p class="byline brandon">Enter your email</p>
       <%= form_for @user, :url => { :action => "create" } do |f| %>
         <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
         <input class="submit brandon" name="commit" type="submit" value="Enter" />

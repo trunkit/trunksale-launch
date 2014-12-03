@@ -12,12 +12,6 @@ class User < ActiveRecord::Base
 
     REFERRAL_STEPS = [
         {
-            'count' => 2,
-            "html" => "Early Access<br>to The Sale",
-            "class" => "two",
-            "image" =>  ActionController::Base.helpers.asset_path("refer/earlyAccess@2x.png")
-        },
-        {
             'count' => 5,
             "html" => "An Additonal 5% OFF<br>Your First Purchase",
             "class" => "three",
